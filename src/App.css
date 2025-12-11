@@ -39,14 +39,14 @@
   font-family: "Playfair Display", serif;
   position: relative;
   z-index: 2;
-  text-align: left;
+  text-align: center;
 }
 
 .hero-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   overflow: hidden;
   border-radius: 50%;
   width: fit-content;
@@ -55,11 +55,11 @@
 }
 
 .hero-logo img {
-  width: 220px;
-  height: 220px;
+  width: 165px;
+  height: 165px;
   object-fit: contain;
   object-position: center;
-  padding: 15px;
+  padding: 11.25px;
   box-sizing: border-box;
   background: #E9DCCF;
 }
@@ -68,7 +68,7 @@
   font-family: "Playfair Display", serif;
   font-size: 2.4rem;
   margin-bottom: 1rem;
-  text-align: left;
+  text-align: center;
   color: #F7F2ED;
   -webkit-text-stroke: 0.5px #5A463A;
   paint-order: stroke;
@@ -76,7 +76,8 @@
 
 .hero-body {
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
   line-height: 1.6;
   color: #F7F2ED;
   -webkit-text-stroke: 0.3px #5A463A;
@@ -115,6 +116,12 @@
   padding: 2rem 1rem;
   font-family: "Playfair Display", serif;
   font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-content {
@@ -181,7 +188,10 @@
   .hero {
     padding: 3rem 1.5rem;
     min-height: 500px;
-    background-position: center;
+  }
+
+  .hero::after {
+    background-position: right center;
   }
 
   .footer-icon {
