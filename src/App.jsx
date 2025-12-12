@@ -1,4 +1,5 @@
 import './App.css'
+  import logoUrl from './assets/Divaria logo.png'
 
 function App() {
   const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -11,7 +12,7 @@ function App() {
     <div className="hero">
       <div className="hero-content">
         <div className="hero-logo">
-          <img src="/Divaria logo.png" alt="Divaria Logo" />
+          <img src={logoUrl} alt="Divaria Logo" />
         </div>
 
         <p className="hero-body">
